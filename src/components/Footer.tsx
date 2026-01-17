@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import icon from "../assets/icon.png";
 
 export const Footer = () => (
@@ -14,19 +13,9 @@ export const Footer = () => (
                 </p>
             </div>
             <div>
-                <h4 className="font-bold mb-4">Platform</h4>
+                <h4 className="font-bold mb-4">Contact</h4>
                 <ul className="space-y-2 text-[#A1A1AA] text-sm">
-                    <li><a href="/#features" className="hover:text-[#D6F248] transition-colors">Features</a></li>
-                    <li><a href="/#security" className="hover:text-[#D6F248] transition-colors">Security</a></li>
-                    <li><a href="/#roadmap" className="hover:text-[#D6F248] transition-colors">Roadmap</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 className="font-bold mb-4">Legal</h4>
-                <ul className="space-y-2 text-[#A1A1AA] text-sm">
-                    <li><Link to="/terms" className="hover:text-[#D6F248] transition-colors">Terms</Link></li>
-                    <li><Link to="/privacy" className="hover:text-[#D6F248] transition-colors">Privacy</Link></li>
-                    <li><a href="mailto:support.elio@atomicmail.io" className="hover:text-[#D6F248] transition-colors">Contact</a></li>
+                    <li><a href="mailto:support.elio@atomicmail.io" className="hover:text-[#D6F248] transition-colors">support.elio@atomicmail.io</a></li>
                 </ul>
             </div>
         </div>

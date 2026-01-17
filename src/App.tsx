@@ -120,7 +120,7 @@ const App = () => {
           <Link to="/privacy" className="hover:text-[#D6F248] transition-colors">Privacy Policy</Link>
           <a href="mailto:support.elio@atomicmail.io" className="hover:text-[#D6F248] transition-colors">Contact</a>
         </div>
-        <p className="text-[#3F3F46] text-xs">© 2026 Elio Wallet. All rights reserved.</p>
+        <p className="text-[#3F3F46] text-xs">© 2026, All rights reserved.</p>
       </div>
     </div>
   );

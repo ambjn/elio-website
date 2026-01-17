@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import icon from "../assets/icon.png";
@@ -23,10 +22,10 @@ export const Navbar = () => {
                     }`}
             >
                 <div className="container h-full flex items-center justify-between">
-                    <Link to="/" className="text-2xl font-bold tracking-tighter flex items-center gap-2">
+                    <a href="/" className="text-2xl font-bold tracking-tighter flex items-center gap-2">
                         <img src={icon} alt="elio" className="w-8 h-8" />
                         elio
-                    </Link>
+                    </a>
 
                     <div className="hidden md:flex items-center gap-8">
                         <NavLinks />
@@ -55,11 +54,7 @@ export const Navbar = () => {
 };
 
 const NavLinks = ({ mobile, onClick }: { mobile?: boolean, onClick?: () => void }) => {
-    const links = [
-        { name: "Features", href: "/#features" },
-        { name: "Security", href: "/#security" },
-        { name: "Roadmap", href: "/#roadmap" },
-    ];
+    const links: { name: string; href: string }[] = [];
 
     return (
         <>
