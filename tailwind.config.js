@@ -5,7 +5,6 @@ export default {
     extend: {
       colors: {
         primary: "var(--color-primary)",
-        "primary-hover": "var(--color-primary-hover)",
       },
     },
   },
