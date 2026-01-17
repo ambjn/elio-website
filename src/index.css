@@ -4,101 +4,53 @@
 
 :root {
   --font-family: "Outfit", sans-serif;
+  --font-serif: "Times New Roman", serif;
+  
+  /* Brand Colors - Keeping Elio's Lime but adapting the style */
   --color-primary: #d6f248;
-  --color-primary-hover: #bde32c;
   --color-bg: #09090b;
-  --color-surface: #18191e;
   --color-text: #ffffff;
-  --color-text-muted: #a1a1aa;
-  --gradient-main: linear-gradient(135deg, #d6f248 0%, #bde32c 100%);
+  
+  /* Spotlight Effect */
+  --spotlight-gradient: radial-gradient(
+    circle at 50% -20%, 
+    rgba(214, 242, 72, 0.15) 0%, 
+    rgba(214, 242, 72, 0.05) 40%, 
+    transparent 70%
+  );
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@layer base {
+  body {
+    @apply bg-[#09090b] text-white overflow-x-hidden selection:bg-[#d6f248] selection:text-black;
+    font-family: var(--font-family);
+  }
 }
 
-body {
-  font-family: var(--font-family);
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  line-height: 1.5;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
+@layer utilities {
+  .text-serif-italic {
+    font-family: var(--font-serif);
+    font-style: italic;
+  }
+  
+  .spotlight-bg {
+    background-image: var(--spotlight-gradient);
+  }
+  
+  .bg-grid-pattern {
+    background-size: 50px 50px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+  }
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: var(--color-bg);
-}
-::-webkit-scrollbar-thumb {
-  background: #333;
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+/* Custom Animation classes */
+.animate-float {
+  animation: float 10s infinite ease-in-out;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
-.gradient-text {
-  background: var(--gradient-main);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px 32px;
-  border-radius: 999px;
-  font-weight: 600;
-  font-size: 1.125rem;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  text-decoration: none;
-}
-
-.btn-primary {
-  background: var(--gradient-main);
-  color: #000;
-  box-shadow: 0 4px 24px rgba(214, 242, 72, 0.25);
-}
-
-.btn-primary:hover {
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 8px 32px rgba(214, 242, 72, 0.4);
-}
-
-.btn-secondary {
-  background: rgba(255, 255, 255, 0.05);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-}
-
-.btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
-}
-
-.blur-blob {
-  position: absolute;
-  filter: blur(120px);
-  z-index: -1;
-  opacity: 0.6;
-  border-radius: 50%;
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
 }
