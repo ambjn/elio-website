@@ -20,8 +20,8 @@ const App = () => {
           transition={{ duration: 0.6 }}
           className="mb-12"
         >
-          <div className="flex items-center gap-2">
-            <span className="text-4xl font-bold tracking-tight text-white">elio</span>
+          <div className="flex items-center">
+            <span className="text-6xl text-white">elio wallet</span>
           </div>
         </motion.div>
 
