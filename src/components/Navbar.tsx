@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import icon from "../assets/icon.png";
@@ -7,8 +7,6 @@ import icon from "../assets/icon.png";
 export const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const location = useLocation();
-    const isHome = location.pathname === "/";
 
     useEffect(() => {
         const handleScroll = () => {
@@ -31,16 +29,7 @@ export const Navbar = () => {
                     </Link>
 
                     <div className="hidden md:flex items-center gap-8">
-                        {isHome ? (
-                            <NavLinks />
-                        ) : (
-                            <Link to="/" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
-                                Back to Home
-                            </Link>
-                        )}
-                        <button className="btn btn-primary px-6 py-2 text-sm !rounded-lg">
-                            Get Early Access
-                        </button>
+                        <NavLinks />
                     </div>
 
                     <button className="md:hidden text-white" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
