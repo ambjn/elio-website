@@ -69,7 +69,7 @@ const App = () => {
           transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
           className="max-w-lg text-[#71717A] text-base md:text-lg leading-relaxed mb-14 font-light"
         >
-          Turn global markets into your playground — from stablecoins to DeFi with the first <span className="text-white font-normal">generationless</span> wallet.
+          send, save & spend <span className="text-white font-normal">stablecoins on Solana</span> — secure, instant, and built for everyone.
         </motion.p>
 
         {/* Action Buttons */}
