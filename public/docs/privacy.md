@@ -64,7 +64,9 @@ To provide functionality, the App interacts with external services:
 
 #### Price and Token Data APIs
 
-- We may query third-party APIs to display token prices and metadata
+- We query third-party APIs to display token prices and metadata, including:
+  - **Jupiter** (jup.ag) - for token pricing and swap routing
+  - **Helius** (helius.dev) - for RPC services and transaction data
 - These queries may include your public wallet address
 - We recommend reviewing the privacy policies of these services
 

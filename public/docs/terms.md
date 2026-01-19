@@ -254,6 +254,10 @@ Our failure to enforce any right or provision of these Terms shall not constitut
 
 You may not assign or transfer your rights under these Terms. We may assign our rights without restriction.
 
+### 14.5 Intellectual Property
+
+All intellectual property rights in and to Elio Wallet, including but not limited to the source code, design, graphics, logos, and documentation, are owned by Amber Jain (https://github.com/ambjn). You are granted a limited, non-exclusive, non-transferable license to use the App for its intended purpose. You may not copy, modify, distribute, sell, or create derivative works based on the App without prior written permission.
+
 ## 15. Contact Information
 
 For questions about these Terms of Service, please contact us at:
