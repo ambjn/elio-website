@@ -35,18 +35,8 @@ export const ActionButtons = () => (
         aria-hidden="true"
       />
     </a>
-    <a
-      href={URLS.appStore}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="h-12 md:h-14 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:brightness-110"
-      aria-label="Download on the App Store"
-    >
-      <img
-        src="/appstore_logo.svg"
-        alt="Download on the App Store"
-        className="h-12 md:h-14"
-      />
-    </a>
+    <div className="bg-[#18181B] border border-white/10 text-white/50 h-12 md:h-14 px-5 md:px-7 rounded-2xl font-medium flex items-center justify-center shadow-lg shadow-black/20">
+      <span className="text-xs md:text-sm font-medium">Launching Soon</span>
+    </div>
   </motion.div>
 );
