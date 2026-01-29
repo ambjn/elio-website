@@ -54,8 +54,8 @@ export const Hero = () => (
       transition={{ duration: 0.8, delay: 0.4, ease }}
       className="max-w-lg text-[#71717A] text-sm md:text-lg leading-relaxed mb-8 md:mb-14 font-light px-4 md:px-0"
     >
-      send, save & spend{" "}
-      <span className="text-white font-normal">stablecoins on Solana</span> —
+      send, spend & trade{" "}
+      <span className="text-white font-normal">with stablecoins on Solana</span> —
       secure, instant, and built for everyone.
     </motion.p>
   </>
