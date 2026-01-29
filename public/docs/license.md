@@ -46,9 +46,23 @@ The App may include open source software components that are subject to their ow
 | React Native | MIT License |
 | Solana Web3.js | Apache 2.0 |
 | Expo | MIT License |
+| Lightweight Charts™ | Apache 2.0 |
+| Drift Protocol SDK | Apache 2.0 |
 | Other Dependencies | Various OSS Licenses |
 
 Your use of these components is subject to their respective license terms.
+
+### 4.2 TradingView Lightweight Charts™ Attribution
+
+This application uses [Lightweight Charts™](https://www.tradingview.com/lightweight-charts/) for charting functionality.
+
+Lightweight Charts™ is a product of [TradingView, Inc.](https://www.tradingview.com)
+
+### 4.3 Drift Protocol Attribution
+
+This application integrates with [Drift Protocol](https://www.drift.trade/) for perpetuals trading functionality.
+
+Drift Protocol is developed by [Drift Labs](https://www.drift.trade/)
 
 ## 5. Updates and Modifications
 

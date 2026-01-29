@@ -90,11 +90,23 @@ Elio Wallet incorporates open source software components. These components are u
 
 Acknowledgments for open source components are included in the application.
 
-### 5.2 Blockchain Data
+### 5.2 TradingView Lightweight Charts™
+
+This application uses [Lightweight Charts™](https://www.tradingview.com/lightweight-charts/) for charting functionality.
+
+Lightweight Charts™ is a product of [TradingView, Inc.](https://www.tradingview.com)
+
+### 5.3 Drift Protocol
+
+This application integrates with [Drift Protocol](https://www.drift.trade/) for perpetuals trading functionality.
+
+Drift Protocol is developed by [Drift Labs](https://www.drift.trade/)
+
+### 5.4 Blockchain Data
 
 Blockchain data displayed in the App (such as transaction history, token information, and network data) is publicly available information from the Solana blockchain network and is not owned by Elio Wallet.
 
-### 5.3 Token Information
+### 5.5 Token Information
 
 Token names, logos, and metadata displayed in the App may be trademarks of their respective owners. Their display does not imply endorsement by Elio Wallet.
 
